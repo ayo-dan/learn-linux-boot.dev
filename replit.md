@@ -31,8 +31,19 @@ This is a learning project from [Boot.dev](https://www.boot.dev) for the "Learn 
 
 ## How to Use
 
+### PATH Configuration
+The `worldbanc/private/bin` directory has been added to your PATH in `~/.profile`, which means you can run any of the shell scripts (like `worldbanc.sh`) from any directory without specifying the full path.
+
+To apply PATH changes in a new shell session:
+```bash
+source ~/.profile
+```
+
 ### Run the Main CLI
-The main WorldBanc CLI tool is set up as the default workflow and will prompt you for your name and email.
+The main WorldBanc CLI tool is set up as the default workflow and will prompt you for your name and email. You can also run it directly from any directory:
+```bash
+worldbanc.sh
+```
 
 ### Build and Run Go Utilities
 ```bash
@@ -49,10 +60,11 @@ go run main.go
 This project is designed for practicing Linux commands like `cd`, `ls`, `cat`, `grep`, `find`, etc.
 
 ## Recent Changes
+- 2025-11-25: Configured PATH in ~/.profile to allow running worldbanc.sh from any directory
 - 2025-01-13: Initial setup in Replit environment
-- Added Go 1.24 toolchain
-- Made shell scripts executable
-- Created .gitignore for Go projects
+  - Added Go 1.24 toolchain
+  - Made shell scripts executable
+  - Created .gitignore for Go projects
 
 ## Notes
 This is an educational project. The "private key" and other sensitive-looking files are intentionally placed for learning purposes and contain no real credentials.
